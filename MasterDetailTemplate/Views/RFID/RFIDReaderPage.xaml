@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailTemplate.Views.RFID.RFIDReaderPage"
+             Title="RFID Tag Reader">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Read Button -->
+            <Button Text="讀取RFID"
+                    BackgroundColor="#433519"
+                    TextColor="White"
+                    FontSize="20"
+                    BorderRadius="8"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    />
+
+            <!-- RFID Data Display Area -->
+            <ScrollView>
+                <StackLayout x:Name="rfidDataLayout" Spacing="10">
+                    <!-- RFID data will be displayed here -->
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
